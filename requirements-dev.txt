@@ -1,0 +1,8 @@
+# Dev/test-only dependencies - not needed to run the app itself, only to
+# run the tests_e2e/ Playwright suite. Keep this out of requirements.txt
+# so a production install (pip install -r requirements.txt) doesn't pull
+# in a full browser automation stack.
+playwright
+
+# After installing this, also run once:
+#   playwright install chromium
